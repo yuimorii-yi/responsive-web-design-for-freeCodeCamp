@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- navstart -->
+    <header id="header">
+
+        <div class="header-img">
+            <img class="logo" id="header" src="img/logo.png" alt="OCULUS QUEST 2" />
+        </div>
+
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#why">製品</a></li>
+                <li><a class="nav-link" href="#features">アプリとゲーム</a></li>
+                <li><a class="nav-link" href="#download">サポート</a></li>
+                <li>
+                    <a class="nav-link"><img class="icon" src="img/Handbag.png" alt="Handbag"></a>
+                </li>
+                <li>
+                    <a class="nav-link"><img class="icon" src="img/User.png" alt="User"></a>
+                </li>
+
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <!-- navend -->
+    <!-- banner start -->
+    <section id="topsection">
+        <img src="img/bg.png" id="bg">
+        <img src="img/left.png" id="left">
+        <img src="img/right.png" id="right">
+        <img src="img/main.png" id="main">
+        <div id="column">
+            <div id="text">
+                <h1 id="maintext">OCULUS QUEST 2 </h1>
+                <p id="ptext">飛び込もう，想像をはるかに超えた リアリティへ</p>
+            </div>
+            <button id="btn">詳しくはこちら</button>
+        </div>
+    </section>
+    <!-- banner end -->
+    <section class="pimg1">
+        <div class="ptext2">
+            <h1>期待をはるかに超える体験</h1>
+            <p id="description">あなたの想像力を飛ばしましょう。自由に、素晴らしいゲームや体験を自由に探索できます。</p>
+        </div>
+
+
+    </section>
+    <div class="pimg2">
+    </div>
+
+    <section id="why">
+        <div class="container">
+            <div class="card">
+                <div class="desc">
+                    <h3>改良された光学系</h3>
+                    <p>色がより明るく鮮やかになり、「スクリーンドア効果」が軽減されました。展開するアクションを目撃しましょう。
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="desc">
+                    <h3>人間工学に基づく設計</h3>
+                    <p>スピードと快適さを考慮して、ヘイロヘッドバンドの設計を改良しました。 </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="desc">
+                    <h3>TOUCHコントローラー</h3>
+                    <p>なぎ払う。投げる。つかむ。あらゆる動きが、リアルで直感的な正確さでVR内に現れます。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="intro">
+        <div class="grid">
+            <div class="column-left">
+                <h1>今年最大のAR/VRカンファレ<br/>ンスを振り返る。</h1>
+                <p id="description">見逃した方も、もう一度見たい方も、Facebook Connectのハイライト<br/>をすべてご覧いただけます。</p>
+                <button class="btn">ハイライトを見る</button>
+            </div>
+            <div class="column-right">
+                <div class="image-div">
+                    <img src="img/frontglass.png" id="hero" alt="glass">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="intro">
+        <div class="grid">
+            <div class="column-right2">
+                <h1>映画館のようなサウンド </h1>
+                <p id="description">内蔵スピーカーが映画館のような3D位置オーディオを実現するため、<br/>あらゆる方向から音が聞こえてきます。 </p>
+                <button class="btn">販売店を探す</button>
+            </div>
+            <div class="column-left2">
+                <div class="image-div">
+                    <img src="img/sideglass.png" id="hero" alt="glass">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="intro">
+        <div class="grid">
+            <div class="column-left3">
+                <h1>ANKER充電器 </h1>
+                <p id="description">付属の充電式バッテリーとコントローラー専用のバッテリーカバーにより<br/> 簡単に充電できますをすべてご覧いただけます。</p>
+                <button class="btn">比較する</button>
+            </div>
+            <div class="column-right3">
+                <div class="image-div">
+                    <img src="img/acc.jpg" id="hero" alt="glass">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="pimg1">
+        <div class="ptext2">
+            <h1>飛び込もう</h1>
+            <p id="description">想像をはるかに超えたリアリティへ</p>
+        </div>
+
+
+    </section>
+    <div class="pimg3">
+    </div>
+
+
+
+    <script type="text/javascript">
+        let left = document.getElementById("left");
+        let right = document.getElementById("right");
+        let main = document.getElementById("main");
+        let bg = document.getElementById("bg");
+        let hero = document.getElementById("hero");
+        window.addEventListener('scroll', function() {
+            var value = window.scrollY;
+            left.style.left = -value * 0.2 + 'px';
+            right.style.left = value * 0.3 + 'px';
+            main.style.left = value * 0.5 + 'px';
+            bg.style.left = -value * 0.6 + 'px';
+            hero.style.left = -value * 4 + 'px';
+
+        })
+    </script>
+</body>
+
+</html>
